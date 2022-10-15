@@ -2,7 +2,7 @@ html, body
   height: 100%
   
 body
-  background: #333
+  background: grey
   display: flex
   justify-content: center
   align-items: center
@@ -36,16 +36,37 @@ body
 
 #new-quote
   display: flex
+
 button
-  background-color: #333  
   color: white
+  background-color: grey
+  border: 2px solid white
+  border-radius: 1px
+  padding: 0.5vw
+  font-size: 1em
+  transition: all 1s
+  webkit-transition: all 1s
+  cursor: pointer
+
+button:hover
+  background-color: #5a5a5a
+  border-radius: 10px
 
 #tweet-quote
   display: flex
+  margin: 1vw
   
 #icon
   display: flex
-  width: 30px
+  width: 4vw
   heigth: auto
-  color: #333
+  transition: all 1s
+  webkit-transition: all 1s
+  padding: 0.5vw
+  border: 2px solid white
+  border-radius: 1px
 
+#icon:hover
+  border: 2px solid white
+  border-radius: 10px
+  background-color: #5a5a5a

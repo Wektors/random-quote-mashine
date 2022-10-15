@@ -14,6 +14,11 @@ class App extends React.Component {
 			.then((response) => response.json())
 			.then((data) => {
 				this.setState({ ...data });
+				this.setState({
+					twitterLink:
+						"https://twitter.com/intent/tweet?text=" +
+						data.content.replace(/\s/gi, "%20"),
+				});
 			});
 	};
 
@@ -28,11 +33,7 @@ class App extends React.Component {
 					<div id="text">{this.state.content}</div>
 					<div id="author">{this.state.author}</div>
 					<div id="quoteFooter">
-						<a
-							id="tweet-quote"
-							href="https://twitter.com/intent/tweet?text=Hello%20world"
-							target="_top"
-						>
+						<a id="tweet-quote" href={this.state.twitterLink} target="_top">
 							<img
 								id="icon"
 								alt="twitter icon"
