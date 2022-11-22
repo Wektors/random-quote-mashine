@@ -1,7 +1,6 @@
 html, body
   height: 100vh
 
-
 body
   display: flex
   font-family: Helvetica Neue
@@ -16,28 +15,25 @@ body
   align-items: center
   transition: background-color 2s
 
-#quote-box 
+#quote-box
   display: flex
   flex-direction: column
   color: white
   width: 70vw
   height: auto
 
-
 #quoteFooter
   display: flex
   flex-direction: row
   justify-content: space-between
-  align-items: center 
+  align-items: center
 
-  
-#text 
+#text
   display: flex
   font-size: 2em
   padding: 6vw
   max-height: 30vw
   justify-content: center
-
 
 #author
   font-size: 1.2em
@@ -46,10 +42,8 @@ body
   padding: 2vw
   margin-bottom: 3vw
 
-
 #new-quote
   display: flex
-  
 
 button
   color: white
@@ -67,7 +61,7 @@ button:hover
 #tweet-quote
   display: flex
   margin: 1vw
-  
+
 #icon
   display: flex
   width: 3vh
@@ -81,3 +75,17 @@ button:hover
 #icon:hover
   border: 2px solid white
   border-radius: 10px
+
+@media (max-width: 400px)
+
+  #text
+    font-size: 2em
+    padding: 1vw
+    max-height: 70vh
+    max-width: 95vw
+
+  #author
+    font-size: 1em
+
+  #quoteFooter
+    font-size: 0.8em
