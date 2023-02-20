@@ -1,8 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## running on netlify: https://main--unique-daffodil-45a036.netlify.app
 
 In the project directory, you can run:
 
